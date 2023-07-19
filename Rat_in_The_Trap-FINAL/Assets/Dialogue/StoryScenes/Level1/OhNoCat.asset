@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d916694e20bc9cb4d818768a0bad1511, type: 3}
+  m_Name: OhNoCat
+  m_EditorClassIdentifier: 
+  sceneName: DangerCat
+  sentences:
+  - text: "Hey, I see you got through the\u2026 Oh\u2026 what\u2019s that smell.
+      It\u2019s coming from you. "
+    speaker: {fileID: 11400000, guid: ef71f286f810f9f488286d99fa7d2811, type: 2}
+  - text: '[A sense of danger and fear shivers through you as you see the eyes of
+      congeniality turn into hunger.] '
+    speaker: {fileID: 11400000, guid: 53369b81156330b418100e1ebba75579, type: 2}
+  - text: "Hey, I don\u2019t want any trouble. Just let me know a way out and I\u2019ll
+      be on my way. "
+    speaker: {fileID: 11400000, guid: 87536d2fdba79844e8a9aadeb4529a9e, type: 2}
+  - text: "I think we\u2019ve gone far past that. No hard feelings. This is just
+      all part of the game. "
+    speaker: {fileID: 11400000, guid: ef71f286f810f9f488286d99fa7d2811, type: 2}
+  - text: "[You wanted to ask what they meant by this, but you know it\u2019s probably
+      best if you run away. You take the computer that once showed Glimmer in your
+      hands.] "
+    speaker: {fileID: 11400000, guid: 53369b81156330b418100e1ebba75579, type: 2}
+  - text: "Sorry for this, but I really wanna get out of here and don\u2019t wanna
+      be meat for a cat of all things. "
+    speaker: {fileID: 11400000, guid: 87536d2fdba79844e8a9aadeb4529a9e, type: 2}
+  - text: '[Smashing the computer on top of Meo, you run away. You hear a cry of
+      pain behind you, but you can care less of what you see or hear as you run away.] '
+    speaker: {fileID: 11400000, guid: 53369b81156330b418100e1ebba75579, type: 2}
+  background: {fileID: 0}
+  nextScene: {fileID: 0}

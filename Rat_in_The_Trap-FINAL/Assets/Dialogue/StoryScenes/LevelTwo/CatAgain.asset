@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d916694e20bc9cb4d818768a0bad1511, type: 3}
+  m_Name: CatAgain
+  m_EditorClassIdentifier: 
+  sceneName: WorriedCat
+  sentences:
+  - text: 'That looked like a BUMPY ride. Too soon? '
+    speaker: {fileID: 11400000, guid: ef71f286f810f9f488286d99fa7d2811, type: 2}
+  - text: "Hey stay 5 ft away from me alright. That wasn\u2019t funny at all. Those
+      were living animals. Animals I guess I knew somehow. And I know that cat eats
+      rats so\u2026 "
+    speaker: {fileID: 11400000, guid: 87536d2fdba79844e8a9aadeb4529a9e, type: 2}
+  - text: "No I\u2019m not usually like this. I\u2019m not normally fazed by blood,
+      but ever since I got here every little thing sets me off. I\u2019m good now
+      alright? "
+    speaker: {fileID: 11400000, guid: ef71f286f810f9f488286d99fa7d2811, type: 2}
+  - text: "[You look at Meo and it didn\u2019t appear that she was lying. In fact,
+      you felt the difference between now and in the lab. Maybe it had something
+      to do with what was happening in this place.] "
+    speaker: {fileID: 11400000, guid: 53369b81156330b418100e1ebba75579, type: 2}
+  - text: 'Alright. Wait how did you get here you were chasing me from before I got
+      here? '
+    speaker: {fileID: 11400000, guid: 87536d2fdba79844e8a9aadeb4529a9e, type: 2}
+  - text: 'Took the shortcut. I was actually trying to warn you about this since
+      the shortcut had a much easier exam. '
+    speaker: {fileID: 11400000, guid: ef71f286f810f9f488286d99fa7d2811, type: 2}
+  - text: 'Right. Well that would have helped a lot. Anyway, are you going to the
+      elevator too? '
+    speaker: {fileID: 11400000, guid: 87536d2fdba79844e8a9aadeb4529a9e, type: 2}
+  - text: 'Yeah. Glimmer told me this was the way out of here. A lot of the previous
+      examiners always end up in this elevator to the outside world supposedly. '
+    speaker: {fileID: 11400000, guid: ef71f286f810f9f488286d99fa7d2811, type: 2}
+  - text: "That\u2019s exactly what I need. Let\u2019s go. "
+    speaker: {fileID: 11400000, guid: ef71f286f810f9f488286d99fa7d2811, type: 2}
+  - text: '[You both enter into the elevator. Two buttons appear before you. GROUND
+      and LAB were labeled in each button. You click LAB and head together to the
+      top of the maze.] '
+    speaker: {fileID: 11400000, guid: 53369b81156330b418100e1ebba75579, type: 2}
+  - text: While going down you see Miao dripping with saliva. She seems to be holding
+      back just enough to not kill you in the elevator.
+    speaker: {fileID: 11400000, guid: 53369b81156330b418100e1ebba75579, type: 2}
+  - text: (You are about to reach the hallway for the lab, and you sense you need
+      to make a run for it. Spam the left and right arrow keys repeatedly. If you
+      press anything else, Miao will kill you. If you accidentally click left or
+      right twice instead of staggered, she will catch up to you.)
+    speaker: {fileID: 11400000, guid: 53369b81156330b418100e1ebba75579, type: 2}
+  background: {fileID: 21300000, guid: ad8909ac4b6cfe246bacd053ab42ee59, type: 3}
+  nextScene: {fileID: 0}

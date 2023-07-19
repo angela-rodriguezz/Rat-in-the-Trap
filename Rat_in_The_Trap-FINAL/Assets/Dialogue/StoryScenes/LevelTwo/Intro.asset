@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d916694e20bc9cb4d818768a0bad1511, type: 3}
+  m_Name: Intro
+  m_EditorClassIdentifier: 
+  sceneName: Start
+  sentences:
+  - text: Of course, I got kidnapped, attacked by a cat, and now lost in a maze all
+      in one day.
+    speaker: {fileID: 11400000, guid: 87536d2fdba79844e8a9aadeb4529a9e, type: 2}
+  - text: '[Running through a series of corners brings you into a one-way road to
+      an underground cave. You found it interesting to see a path of railway tracks
+      that trace into the cave.]'
+    speaker: {fileID: 11400000, guid: 53369b81156330b418100e1ebba75579, type: 2}
+  - text: HEY WAIT! I WANT TO TALK TO YOU.
+    speaker: {fileID: 11400000, guid: ef71f286f810f9f488286d99fa7d2811, type: 2}
+  - text: Either I talk to the carnivore or go into a big dark cave. So far I am
+      not liking my choices.
+    speaker: {fileID: 11400000, guid: 87536d2fdba79844e8a9aadeb4529a9e, type: 2}
+  - text: '[Only one choice was on your mind and that was to go in. You enter into
+      the rideable cart that was in the mouth of the cave and traverse into the unknown.]'
+    speaker: {fileID: 11400000, guid: 53369b81156330b418100e1ebba75579, type: 2}
+  background: {fileID: 21300000, guid: 05c7f8f838459504f93ab08e99af60b7, type: 3}
+  nextScene: {fileID: 11400000, guid: 69dc4b0fae60e2948aa1f6986174aa12, type: 2}

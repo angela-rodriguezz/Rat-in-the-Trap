@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e494f8f2932b5b48b81e5238f3ae269, type: 3}
+  m_Name: DeovUtil
+  m_EditorClassIdentifier: 
+  labels:
+  - text: Deontologist
+    nextScene: {fileID: 11400000, guid: 17630361c350f1c4c9fd7a80b6a8333c, type: 2}
+  - text: Utilitarian
+    nextScene: {fileID: 11400000, guid: ba3d0ccb5a2259c4bb05266f074d94ad, type: 2}
+  - text: IDK BOT
+    nextScene: {fileID: 11400000, guid: f571a890020f6d84fa8773dfc4d6facd, type: 2}

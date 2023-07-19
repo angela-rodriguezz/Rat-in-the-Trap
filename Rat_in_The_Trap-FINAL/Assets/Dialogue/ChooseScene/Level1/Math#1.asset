@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e494f8f2932b5b48b81e5238f3ae269, type: 3}
+  m_Name: Math#1
+  m_EditorClassIdentifier: 
+  labels:
+  - text: 0
+    nextScene: {fileID: 11400000, guid: c3cb8e389039aeb40b751e93ef375348, type: 2}
+  - text: 1
+    nextScene: {fileID: 11400000, guid: 345070c3a89fb104c89eaf3f9ea7d9d5, type: 2}
+  - text: IDK...
+    nextScene: {fileID: 11400000, guid: 943f6f3d02f91ee489f2cda056d60f5a, type: 2}

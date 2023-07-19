@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d916694e20bc9cb4d818768a0bad1511, type: 3}
+  m_Name: TrolleyPart2
+  m_EditorClassIdentifier: 
+  sceneName: 
+  sentences:
+  - text: "Let\u2019s begin experiment #177-54. "
+    speaker: {fileID: 11400000, guid: a7b790a633195f44b91a664d4dbaf794, type: 2}
+  - text: "We\u2019ll be recreating a classic thought experiment today. The board
+      is excited to see how you perform! "
+    speaker: {fileID: 11400000, guid: a7b790a633195f44b91a664d4dbaf794, type: 2}
+  - text: "I\u2019m more likely to perform in the Olympics than for you guys. And
+      I\u2019m done with the board. I\u2019m getting out of here whether your board
+      likes it or not.  "
+    speaker: {fileID: 11400000, guid: 87536d2fdba79844e8a9aadeb4529a9e, type: 2}
+  - text: 'Right. CONTINUING EXPERIMENT. We elected four other subjects for this
+      experiment. Three of them are tied to the track ahead of you. One is tied to
+      another track that diverts from the main line ahead. This individual was your
+      closest companion in the incubator phase! If you do nothing the minecart will
+      hit three persons or you can choose to divert the track and hit one person. '
+    speaker: {fileID: 11400000, guid: a7b790a633195f44b91a664d4dbaf794, type: 2}
+  - text: "Wait? The incubator? What do you mean? Hey, I don\u2019t want to hurt
+      anyone! "
+    speaker: {fileID: 11400000, guid: 87536d2fdba79844e8a9aadeb4529a9e, type: 2}
+  - text: "You have 15 seconds to decide. We\u2019re excited to observe your decision! "
+    speaker: {fileID: 11400000, guid: a7b790a633195f44b91a664d4dbaf794, type: 2}
+  background: {fileID: 21300000, guid: 482abfd89705e344688eaed3783403ed, type: 3}
+  nextScene: {fileID: 11400000, guid: 8527f05185ffbe747b9343bdc3838cfb, type: 2}

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d916694e20bc9cb4d818768a0bad1511, type: 3}
+  m_Name: Trolley
+  m_EditorClassIdentifier: 
+  sceneName: 
+  sentences:
+  - text: '[Moving at an accelerating speed, you travel through the dark expanse
+      of the cave in silence until you hear the bright, high-pitched voice you are
+      familiar with.]'
+    speaker: {fileID: 11400000, guid: 53369b81156330b418100e1ebba75579, type: 2}
+  - text: Congragulations! The board is excited to offer you candidacy in experiment
+      #177-54! Your extermination has been temporarily suspended! Welcome to the
+      team! Are you ready to begin experiment #177-54?
+    speaker: {fileID: 11400000, guid: a7b790a633195f44b91a664d4dbaf794, type: 2}
+  - text: Hey, where am I? Could you please just tell me what's going on? I think
+      I deserve some explanation after doing what you asked!
+    speaker: {fileID: 11400000, guid: 87536d2fdba79844e8a9aadeb4529a9e, type: 2}
+  - text: No. Fantastic! Let's get started!
+    speaker: {fileID: 11400000, guid: a7b790a633195f44b91a664d4dbaf794, type: 2}
+  - text: Would you consider yourself a deontologist or utilitarian?
+    speaker: {fileID: 11400000, guid: a7b790a633195f44b91a664d4dbaf794, type: 2}
+  background: {fileID: 21300000, guid: 69b02962a5564874aa6d3513979008d7, type: 3}
+  nextScene: {fileID: 11400000, guid: 4538b59a182096646b4f5974de9141dd, type: 2}

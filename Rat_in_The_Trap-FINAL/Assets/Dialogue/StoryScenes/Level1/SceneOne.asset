@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d916694e20bc9cb4d818768a0bad1511, type: 3}
+  m_Name: SceneOne
+  m_EditorClassIdentifier: 
+  sceneName: Intro
+  sentences:
+  - text: Mmmmm... where am I? What is this place? Who's there?
+    speaker: {fileID: 11400000, guid: 87536d2fdba79844e8a9aadeb4529a9e, type: 2}
+  - text: '[You hear strange and eerie footsteps from the corner as you wake up from
+      slumber]'
+    speaker: {fileID: 11400000, guid: 53369b81156330b418100e1ebba75579, type: 2}
+  - text: You're new aren't you? We haven't had a new guest around here in months.
+    speaker: {fileID: 11400000, guid: ef71f286f810f9f488286d99fa7d2811, type: 2}
+  - text: '[Silent sounds of footsteps echo across the walls as bulging red eyes
+      appear]'
+    speaker: {fileID: 11400000, guid: 53369b81156330b418100e1ebba75579, type: 2}
+  - text: The name's Meo. I'm one of the residents in this maze.
+    speaker: {fileID: 11400000, guid: ef71f286f810f9f488286d99fa7d2811, type: 2}
+  - text: Maze? What maze? I don't remember coming to a maze.
+    speaker: {fileID: 11400000, guid: 87536d2fdba79844e8a9aadeb4529a9e, type: 2}
+  - text: I call it like it is. It's not a room we are in, but a series of irritating
+      walls that are too tall to leap over and hundreds of tiresome rooms that make
+      it hard to leave.
+    speaker: {fileID: 11400000, guid: ef71f286f810f9f488286d99fa7d2811, type: 2}
+  - text: Well I'm not supposed to be here.
+    speaker: {fileID: 11400000, guid: 87536d2fdba79844e8a9aadeb4529a9e, type: 2}
+  - text: '[Meo stares at you visibly annoyed]'
+    speaker: {fileID: 11400000, guid: 53369b81156330b418100e1ebba75579, type: 2}
+  - text: Whether you like it or not, you were placed here just like the rest of
+      us. It's your new home.
+    speaker: {fileID: 11400000, guid: ef71f286f810f9f488286d99fa7d2811, type: 2}
+  - text: No, I have a home already. It doesn't make sense. NONE of this makes any
+      sense.
+    speaker: {fileID: 11400000, guid: 87536d2fdba79844e8a9aadeb4529a9e, type: 2}
+  - text: Yes, indeed. Well I have you the pop talk already and I'll leave you on
+      your own for now. Take care and just know that room is the starting point.
+      It's easy to get out of here if you answer the questions however they want.
+    speaker: {fileID: 11400000, guid: ef71f286f810f9f488286d99fa7d2811, type: 2}
+  - text: They? Who's they?
+    speaker: {fileID: 11400000, guid: 87536d2fdba79844e8a9aadeb4529a9e, type: 2}
+  - text: '[The cat scurries away in a hurry to the corner of what looks like a wall]'
+    speaker: {fileID: 11400000, guid: 53369b81156330b418100e1ebba75579, type: 2}
+  - text: Oh and before I go. I'll be keeping an eye on you. Just cause... you know...
+      it's hard to find any new prey these days.
+    speaker: {fileID: 11400000, guid: ef71f286f810f9f488286d99fa7d2811, type: 2}
+  - text: '[With that the cat left. Trying to go to the corner they left in, you
+      see nothing, but the rest of a series of corners and walls.]'
+    speaker: {fileID: 11400000, guid: 53369b81156330b418100e1ebba75579, type: 2}
+  background: {fileID: 21300000, guid: 0b92273fcb463d848af471a328cccf4d, type: 3}
+  nextScene: {fileID: 11400000, guid: 73d22e5fd168ced4fadfc6df8620ae28, type: 2}
