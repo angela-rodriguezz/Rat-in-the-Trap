@@ -5,14 +5,15 @@ using UnityEngine.UI;
 
 public class Transition : MonoBehaviour
 {
-    public bool isSwitched = false;
-    public bool catOut = false;
-    public GameObject Cat;
+    private bool isSwitched = false;
+    private bool catOut = false;
+    private bool glimmerOut = false;
+
     public Image background1;
     public Image background2;
     public Animator animator;
     public Animator animator2;
-    public bool nextLevel;
+    public Animator animator3;
 
     public void NoCat()
     {
@@ -34,22 +35,24 @@ public class Transition : MonoBehaviour
         
     }
 
-    public void worriedCat()
+    
+    public void glimmerActivate()
     {
-        
-        animator2.SetTrigger("Worried");
-        
-        
+        if (!glimmerOut)
+        {
+            animator3.SetTrigger("Enter");
+            animator3.SetTrigger("Talk");
+        }
+        glimmerOut = true;
     }
 
-    public void stressedCat()
+    public void glimmerDeactivate()
     {
-        
-        
-        animator2.SetTrigger("Stressed");
-        
-        
-        
+        if (glimmerOut)
+        {
+            animator3.SetTrigger("Disappear");
+        }
+        glimmerOut = false;
     }
 
     public void ReturnCat()
@@ -89,8 +92,7 @@ public class Transition : MonoBehaviour
         {
             background1.sprite = sprite;
             animator.SetTrigger("ReverseBG");
-            isSwitched = !isSwitched;
-            
+            isSwitched = !isSwitched;           
         }
         
     }

@@ -12,7 +12,6 @@ public class DialogueManager : MonoBehaviour
     public Scenes currentScene;
     public static bool finished;
     private State state = State.COMPLETED;
-    public bool appearComputer;
     private Animator animator;
     public Transition catAnimator;
     private bool isHidden = false;
@@ -82,6 +81,29 @@ public class DialogueManager : MonoBehaviour
         return currentScene.sceneName == "Intro";
     }
 
+    public bool appearGlimmer()
+    {       
+        if (currentScene.sceneName == "Trolley" && sentenceIndex == 1) {
+            return true;
+        } else
+        {
+            return currentScene.sceneName == "Lab" && sentenceIndex == 2;
+        }
+        
+        
+    }
+
+    public bool leaveGlimmer()
+    {
+        if (currentScene.sceneName == "PostTrolley" && sentenceIndex == 3) {
+            return true;
+        } else
+        {
+            return (currentScene.sceneName == "Finished" && sentenceIndex == 1);
+        }
+        
+    }
+
     public void FinishSentence()
     {
         state = State.COMPLETED;
@@ -97,6 +119,7 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(lineAppear);
         personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
         personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
+        
     }
 
     private IEnumerator TypeText(string text)
@@ -124,22 +147,22 @@ public class DialogueManager : MonoBehaviour
         {
             catAnimator.dangerCat();
         }
-
-        if (currentScene.sceneName == "WorriedCat")
-        {
-            catAnimator.ReturnCat();
-            catAnimator.worriedCat();
-        }
-
-        if (currentScene.sceneName == "StressedCat")
-        {
-            catAnimator.ReturnCat();
-            catAnimator.stressedCat();
-        }
+       
 
         if (currentScene.sceneName == "CatAgain")
         {
             catAnimator.ReturnCat();
         }
+
+        if (appearGlimmer())
+        {
+            catAnimator.glimmerActivate();
+        }
+
+        if (leaveGlimmer())
+        {
+            catAnimator.glimmerDeactivate();
+        }
+
     }
 }

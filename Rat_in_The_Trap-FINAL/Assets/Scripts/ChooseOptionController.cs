@@ -6,24 +6,17 @@ using TMPro;
 
 public class ChooseOptionController : MonoBehaviour
 {
-    public Color defaultColor;
-    public Color hoverColor;
-    private Scenes scene;
-    private TextMeshProUGUI textMesh;
-    public SelectionScreen controller;
-    public Button btn1;
-    public Button btn2;
-    public Button btn3;
-    public TextMeshProUGUI buttonChoice1;
-    public TextMeshProUGUI buttonChoice2;   
-    public TextMeshProUGUI buttonChoice3;
+    [SerializeField]
+    private SelectionScreen controller;
+    [SerializeField]
+    private Button btn1;
+    [SerializeField]
+    private Button btn2;
+    [SerializeField]
+    private Button btn3;
+    
 
-    // Start is called before the first frame update
-    void Awake()
-    {
-        textMesh = GetComponent<TextMeshProUGUI>();
-        textMesh.color = defaultColor;
-    }
+    
 
     void Start()
     { 

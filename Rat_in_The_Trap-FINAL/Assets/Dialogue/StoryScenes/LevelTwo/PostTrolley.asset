@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d916694e20bc9cb4d818768a0bad1511, type: 3}
   m_Name: PostTrolley
   m_EditorClassIdentifier: 
-  sceneName: 
+  sceneName: PostTrolley
   sentences:
   - text: 'Feel free to jump off the cart to the next phase of our experiment. '
     speaker: {fileID: 11400000, guid: a7b790a633195f44b91a664d4dbaf794, type: 2}
@@ -25,8 +25,8 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: a7b790a633195f44b91a664d4dbaf794, type: 2}
   - text: 'WAIT HOW DO I STOP THIS RIDE? '
     speaker: {fileID: 11400000, guid: 87536d2fdba79844e8a9aadeb4529a9e, type: 2}
-  - text: "[The screen turns black and you\u2019re left with no answer as to how
-      to stop the ride.] "
+  - text: "[The screen leaves and you\u2019re left with no answer as to how to stop
+      the ride.] "
     speaker: {fileID: 11400000, guid: 53369b81156330b418100e1ebba75579, type: 2}
   - text: "[The end of the tracks appear ahead of you and you notice the figure of
       the cat in the distance waving to you excitedly. You fear of the possibility

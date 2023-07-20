@@ -5,12 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class PlayDialogue : MonoBehaviour
 {
-    public GameScene currentScene;
-    public DialogueManager bottomBar;
-    public Transition backgroundController;
-    public SelectionScreen chooseController;
-
     private State state = State.IDLE;
+    [SerializeField]
+    private GameScene currentScene;
+    [SerializeField]
+    private DialogueManager bottomBar;
+    [SerializeField]
+    private Transition backgroundController;
+    [SerializeField]
+    private SelectionScreen chooseController;
+
 
     private enum State
     {
@@ -46,6 +50,7 @@ public class PlayDialogue : MonoBehaviour
                 {
                     backgroundController.NoCat();
                 }
+                
                 if (state == State.IDLE && bottomBar.IsLastSentence())
                 {
                     PlayScene((currentScene as Scenes).nextScene);

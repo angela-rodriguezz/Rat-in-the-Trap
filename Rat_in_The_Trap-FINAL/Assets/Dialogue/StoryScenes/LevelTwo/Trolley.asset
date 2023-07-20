@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d916694e20bc9cb4d818768a0bad1511, type: 3}
   m_Name: Trolley
   m_EditorClassIdentifier: 
-  sceneName: 
+  sceneName: Trolley
   sentences:
   - text: '[Moving at an accelerating speed, you travel through the dark expanse
       of the cave in silence until you hear the bright, high-pitched voice you are
