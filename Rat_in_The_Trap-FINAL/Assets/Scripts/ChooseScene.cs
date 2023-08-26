@@ -8,6 +8,7 @@ using UnityEngine.UI;
 
 public class ChooseScene : GameScene
 {
+    // each of the difference possible choices
     public List<ChooseLabel> labels;
 
     [System.Serializable]

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,15 +11,20 @@ public class PlayDialogue : MonoBehaviour
     public Transition backgroundController;
     public SelectionScreen chooseController;
 
-    private State state = State.IDLE;
+    private State state = State.IDLE; // sets the current scene to a regular dialogue scene
 
+    // idle state: the regular dialogue playing 
+    // animate state: the scene transitioning to a new background
+    // choose state: the scene changing to a choosing dialogue prompt
     private enum State
     {
         IDLE, ANIMATE, CHOOSE
     }
     
 
-    // Start is called before the first frame update
+    // checks if the starting scene is a regular dialogue scene
+    // then declares it a storyScene and starts playing the dialogue
+    // sets the background to the sprite
     void Start()
     {
         if (currentScene is Scenes)
@@ -30,7 +36,13 @@ public class PlayDialogue : MonoBehaviour
     }
         
 
-    // Update is called once per frame
+    // if the player is hitting space or clicking
+        // checks if there is no more sentences in the scene b/c then goes to the next level
+        // otherwise if sentence is completed, then...
+            // checks if hiding cat, then cat hide animation
+            // checks if last sentence in scene, then plays the next scene
+            // else plays the next sentence
+        // otherwise the player is double clicking and therefore we autofill the sentence
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
@@ -65,17 +77,27 @@ public class PlayDialogue : MonoBehaviour
         }
     }
 
+    // wait until loading next level
     private IEnumerator EnterLoad()
     {
         yield return new WaitForSeconds(0.05f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    // starts switching to a new background scene
     public void PlayScene(GameScene scene)
     {
         StartCoroutine(SwitchScene(scene));
     }
 
+    // sets the state to animate
+    // sets the currentscene to given scene
+    // if the scene is not a choose scene...
+        // if the given scene's background isn't null and there is no more sentences in scene...
+            // switches the backgrounds and waits until returning
+        // plays the scene's dialogue and sets the state to idle
+    // if the scene is a choose scene...
+        // sets up the choice animations, changes the text of buttons to choices, and starts timer
     private IEnumerator SwitchScene(GameScene scene)
     {
         state = State.ANIMATE;

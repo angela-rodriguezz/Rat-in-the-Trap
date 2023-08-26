@@ -6,17 +6,17 @@ using UnityEngine.UI;
 
 public class SelectionScreen : MonoBehaviour
 {
-    public ChooseOptionController label;
-    public PlayDialogue gameController;
-    private RectTransform rectTransform;
-    private Animator animator;
-    public Button btn1;
-    public Button btn2;
-    public Button btn3;
-    public TextMeshProUGUI buttonChoice1;
-    public TextMeshProUGUI buttonChoice2;
-    public TextMeshProUGUI buttonChoice3;
-    private ChooseScene main;
+    public ChooseOptionController label; 
+    public PlayDialogue gameController; // used to play the next scene that corresponds to the choice the player made
+    private RectTransform rectTransform; // used to alter the positions of the timer
+    private Animator animator; // animator to show or hide the button options
+    public Button btn1; // button one choice
+    public Button btn2; // button two choice
+    public Button btn3; // button three choice
+    public TextMeshProUGUI buttonChoice1; // text for button 1
+    public TextMeshProUGUI buttonChoice2; // text for button 2
+    public TextMeshProUGUI buttonChoice3; // text for button 3
+    private ChooseScene main; // current choice scene
 
     // Timer Variables
     public TextMeshProUGUI timerText;
@@ -26,7 +26,7 @@ public class SelectionScreen : MonoBehaviour
     public float shakeSpeed = 50f; // This is the speed of the text shake
     private Vector3 timerOriginalPosition; // This will store the original position of the Text element
 
-    // Start is called before the first frame update
+    
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -50,6 +50,7 @@ public class SelectionScreen : MonoBehaviour
         }
     }
 
+    // adds to the value of the timer if active
     void FixedUpdate() 
     {
         if (activeTimer) 
@@ -58,6 +59,10 @@ public class SelectionScreen : MonoBehaviour
         }
     }
 
+    // Shows the scene choice options
+    // sets the main to the current scene
+    // changes the text of the buttons to each of the options
+    // starts the timer
     public void SetupChoose(ChooseScene scene)
     {   
         animator.SetTrigger("Show");
@@ -68,7 +73,9 @@ public class SelectionScreen : MonoBehaviour
         timer = 0.0f;
         activeTimer = true;
     }
-
+    // Plays the scene dialogue that occurs after making the choice
+    // hides the previous choices
+    // hides the timer
     public void PerformChoice(int num)
     {        
         gameController.PlayScene(main.labels[num].nextScene);

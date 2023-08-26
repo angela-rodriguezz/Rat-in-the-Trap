@@ -29,6 +29,7 @@ public class DialogueManager : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    // button animation for hiding choices
     public void Hide()
     {
         if (!isHidden)
@@ -39,6 +40,7 @@ public class DialogueManager : MonoBehaviour
         
     }
 
+    // button animation for showing choices
     public void Show()
     {
         animator.SetTrigger("Show");
@@ -50,6 +52,8 @@ public class DialogueManager : MonoBehaviour
         barText.text = "";
     }
     
+    // plays the current scene and starts playing the next sentence
+    // starts negative since we are adding each time
     public void PlayScene(Scenes scene)
     {
         currentScene = scene;
@@ -82,6 +86,8 @@ public class DialogueManager : MonoBehaviour
         return currentScene.sceneName == "Intro";
     }
 
+
+    // If the player double clicks, the state is now complete, the coroutine stops, and now the text immediately shows the sentence immediately
     public void FinishSentence()
     {
         state = State.COMPLETED;
@@ -91,18 +97,28 @@ public class DialogueManager : MonoBehaviour
 
     }
 
+    // unless there is no next sentence in the scene and the text is completed, this function plays the next sentence
+    // we get one of the sentences in the list from the current sentence index and enter it into the coroutine
+    // change the player name or color if the speaker changes
     public void PlayNextSentence()
     {
-        lineAppear = TypeText(currentScene.sentences[++sentenceIndex].text);
-        StartCoroutine(lineAppear);
-        personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
-        personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
+        if (!IsLastSentence() && !finished) { 
+            lineAppear = TypeText(currentScene.sentences[++sentenceIndex].text);
+            StartCoroutine(lineAppear);
+            personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
+            personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
+        }
     }
 
+    // designates that the dialogue is playing and sets the text to empty 
+    // starts the index at 0 and continues until the state is complete
+    // adds each letter into the text box from the intended string to be returned
+    // yield return changes timing of when text appears
+    // if the index ever equals the text length, the state is now completed and the enumerator ends
     private IEnumerator TypeText(string text)
     {
         barText.text = "";
-        state = State.PLAYING;
+        state = State.PLAYING; 
         int wordIndex = 0;
 
         while (state != State.COMPLETED) 

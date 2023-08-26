@@ -61,12 +61,12 @@ public class Transition : MonoBehaviour
         }
         catOut = true;
     }
-
+    // checks if the current scene's background isn't null
     public bool CheckImage(Sprite sprite)
     {
         return sprite != null;
     }
-
+    // starts changing the backgrounds
     public void SwitchImage(Sprite sprite)
     {
         SetImage(sprite);
@@ -76,7 +76,10 @@ public class Transition : MonoBehaviour
     {
         background1.sprite = sprite;
     }
-
+    // if the background isn't switched...
+        // the background sprite is changed to the new background, the fading animation begins, and is now switched
+    // if the background is switched
+        // change back to the previous background, reverse fading animation begins, and is now not switched
     public void SetImage(Sprite sprite)
     {
         if (!isSwitched)
