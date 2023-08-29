@@ -138,6 +138,7 @@ public class DialogueManager : MonoBehaviour
 
         if (currentScene.sceneName == "DangerCat")
         {
+            Health.health = 2;
             catAnimator.dangerCat();
         }
 

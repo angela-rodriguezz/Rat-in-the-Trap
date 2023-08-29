@@ -7,7 +7,7 @@ public class Health : MonoBehaviour
     public GameObject health1;
     public GameObject health2;
     public GameObject health3;
-    public int health;
+    public static int health;
 
     // Start is called before the first frame update
     void Start()
