@@ -880,7 +880,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 306.03998, y: 123.11499}
+  m_AnchoredPosition: {x: 306.03992, y: 123.11499}
   m_SizeDelta: {x: 612.08, y: 246.23}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &447092950
@@ -1092,6 +1092,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   label: {fileID: 1327927271}
   gameController: {fileID: 1661220819}
+  animator: {fileID: 0}
   btn1: {fileID: 493524175}
   btn2: {fileID: 33084108}
   btn3: {fileID: 839576532}
@@ -1363,7 +1364,7 @@ RectTransform:
   m_GameObject: {fileID: 566663599}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.022222223, y: 0.022222223, z: 0.022222223}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1922318436}
@@ -1372,7 +1373,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.8444824, y: -2.837738}
+  m_AnchoredPosition: {x: -263, y: -134}
   m_SizeDelta: {x: 150, y: 48.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &566663601
@@ -1483,6 +1484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   label: {fileID: 0}
   gameController: {fileID: 1661220819}
+  animator: {fileID: 891778886}
   btn1: {fileID: 566663601}
   btn2: {fileID: 1134167010}
   btn3: {fileID: 1466092853}
@@ -1822,6 +1824,8 @@ GameObject:
   m_Component:
   - component: {fileID: 891778884}
   - component: {fileID: 891778885}
+  - component: {fileID: 891778887}
+  - component: {fileID: 891778886}
   m_Layer: 0
   m_Name: RealChoose
   m_TagString: Untagged
@@ -1838,7 +1842,7 @@ Transform:
   m_GameObject: {fileID: 891778883}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -6.3026676, z: 0}
-  m_LocalScale: {x: 45, y: 45, z: 45}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 566663600}
@@ -1865,6 +1869,38 @@ MonoBehaviour:
   btn1: {fileID: 566663601}
   btn2: {fileID: 1134167010}
   btn3: {fileID: 1466092853}
+--- !u!95 &891778886
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891778883}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ea6ee7a880692874f89ee5a3c1691b4b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!225 &891778887
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891778883}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &912307913
 GameObject:
   m_ObjectHideFlags: 0
@@ -2050,7 +2086,7 @@ RectTransform:
   m_GameObject: {fileID: 1134167008}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.022222223, y: 0.022222223, z: 0.022222223}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 342343789}
@@ -2059,7 +2095,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.027565, y: -2.837738}
+  m_AnchoredPosition: {x: -88.38, y: -134}
   m_SizeDelta: {x: 150, y: 48.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1134167010
@@ -2170,6 +2206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   label: {fileID: 0}
   gameController: {fileID: 1661220819}
+  animator: {fileID: 0}
   btn1: {fileID: 566663601}
   btn2: {fileID: 1134167010}
   btn3: {fileID: 1466092853}
@@ -2214,7 +2251,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -93.84003, y: 110.70996}
+  m_AnchoredPosition: {x: -93.839966, y: 110.70996}
   m_SizeDelta: {x: -187.68, y: -221.41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1299709186
@@ -2425,7 +2462,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -93.84003, y: 0}
+  m_AnchoredPosition: {x: -93.839966, y: 0}
   m_SizeDelta: {x: -187.68, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1316639991
@@ -2588,7 +2625,7 @@ RectTransform:
   m_GameObject: {fileID: 1466092851}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.022222223, y: 0.022222223, z: 0.022222223}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1936863878}
@@ -2597,7 +2634,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.7644501, y: -2.837738}
+  m_AnchoredPosition: {x: 81.3, y: -134}
   m_SizeDelta: {x: 150, y: 48.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1466092853
@@ -2708,6 +2745,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   label: {fileID: 0}
   gameController: {fileID: 1661220819}
+  animator: {fileID: 0}
   btn1: {fileID: 566663601}
   btn2: {fileID: 1134167010}
   btn3: {fileID: 1466092853}
@@ -3529,7 +3567,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1804106304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3644,7 +3682,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -322846.25, y: 46858.453}
+  m_AnchoredPosition: {x: 151.79993, y: -19.400024}
   m_SizeDelta: {x: 285.07, y: 28.709991}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1867558933
