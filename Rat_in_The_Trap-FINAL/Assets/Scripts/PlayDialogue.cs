@@ -10,6 +10,7 @@ public class PlayDialogue : MonoBehaviour
     public DialogueManager bottomBar;
     public Transition backgroundController;
     public SelectionScreen chooseController;
+    public static int loader = 3;
 
     private State state = State.IDLE; // sets the current scene to a regular dialogue scene
     
@@ -27,6 +28,7 @@ public class PlayDialogue : MonoBehaviour
     // sets the background to the sprite
     void Start()
     {
+        loader = 3;
         if (currentScene is Scenes)
         {
             Scenes storyScene = currentScene as Scenes;
@@ -49,7 +51,12 @@ public class PlayDialogue : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             {
-                if (bottomBar.IsCompleted() && bottomBar.IsLastSentence() && bottomBar.IsFinalScene())
+                if (SceneManager.GetActiveScene().buildIndex == 3 && bottomBar.IsFinalScene() && bottomBar.IsCompleted() && bottomBar.IsLastSentence())
+                {
+                    loader = 4;
+                    SceneManager.LoadScene("LoadingScene");
+                }
+                else if (bottomBar.IsCompleted() && bottomBar.IsLastSentence() && bottomBar.IsFinalScene())
                 {
                     StartCoroutine(EnterLoad());
                     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -84,8 +91,12 @@ public class PlayDialogue : MonoBehaviour
     // wait until loading next level
     private IEnumerator EnterLoad()
     {
-        yield return new WaitForSeconds(0.05f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        while (true)
+        {
+            yield return new WaitForSeconds(0.05f);
+            break;
+        }
+        
     }
 
     // starts switching to a new background scene
