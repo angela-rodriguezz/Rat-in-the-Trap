@@ -69,6 +69,7 @@ public class SelectionScreen : MonoBehaviour
     public void SetupChoose(ChooseScene scene)
     {
         activeTimer = true;
+        StartCoroutine(EnterLoad());
         animator.SetTrigger("Show");
         main = scene;
         buttonChoice1.text = scene.labels[0].text;
@@ -84,7 +85,13 @@ public class SelectionScreen : MonoBehaviour
         activeTimer = false;
         timerText.gameObject.SetActive(activeTimer);
         gameController.PlayScene(main.labels[num].nextScene);
+        StartCoroutine(EnterLoad());
         animator.SetTrigger("Hide");
         timer = 0.0f;
+    }
+
+    private IEnumerator EnterLoad()
+    {
+        yield return new WaitForSeconds(60f);
     }
 }

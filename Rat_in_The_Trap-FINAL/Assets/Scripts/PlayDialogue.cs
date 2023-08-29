@@ -12,7 +12,7 @@ public class PlayDialogue : MonoBehaviour
     public SelectionScreen chooseController;
 
     private State state = State.IDLE; // sets the current scene to a regular dialogue scene
-
+    
     // idle state: the regular dialogue playing 
     // animate state: the scene transitioning to a new background
     // choose state: the scene changing to a choosing dialogue prompt
@@ -45,36 +45,40 @@ public class PlayDialogue : MonoBehaviour
         // otherwise the player is double clicking and therefore we autofill the sentence
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+        if (currentScene is not ChooseScene)
         {
-            if (bottomBar.IsCompleted() && bottomBar.IsLastSentence() && bottomBar.IsFinalScene())
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             {
-                StartCoroutine(EnterLoad());
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            }
-            else if (bottomBar.IsCompleted())
-            {
-                if (bottomBar.ChangeCat() && bottomBar.IsLastSentence())
+                if (bottomBar.IsCompleted() && bottomBar.IsLastSentence() && bottomBar.IsFinalScene())
                 {
-                    backgroundController.NoCat();
+                    StartCoroutine(EnterLoad());
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 }
-                if (state == State.IDLE && bottomBar.IsLastSentence())
+                else if (bottomBar.IsCompleted())
                 {
-                    PlayScene((currentScene as Scenes).nextScene);
+                    if (bottomBar.ChangeCat() && bottomBar.IsLastSentence())
+                    {
+                        backgroundController.NoCat();
+                    }
+                    if (state == State.IDLE && bottomBar.IsLastSentence())
+                    {
+                        PlayScene((currentScene as Scenes).nextScene);
+                    }
+                    else
+                    {
+                        bottomBar.PlayNextSentence();
+                    }
+
                 }
                 else
                 {
-                    bottomBar.PlayNextSentence();
+                    DialogueManager.finished = true;
+                    bottomBar.FinishSentence();
                 }
-                
-            } 
-            else
-            {
-                DialogueManager.finished = true;
-                bottomBar.FinishSentence();  
-            }
 
+            }
         }
+        
     }
 
     // wait until loading next level
