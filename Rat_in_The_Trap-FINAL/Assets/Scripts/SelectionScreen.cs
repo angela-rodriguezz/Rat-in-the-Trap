@@ -23,7 +23,7 @@ public class SelectionScreen : MonoBehaviour
     private float timer = 0.0f;
     private bool activeTimer = false;
     public float shakeAmount = 0.075f; // This is the amount of text shake you want to apply
-    public float shakeSpeed = 20f; // This is the speed of the text shake
+    public float shakeSpeed = 50f; // This is the speed of the text shake
     private Vector3 timerOriginalPosition; // This will store the original position of the Text element
 
     
@@ -80,10 +80,11 @@ public class SelectionScreen : MonoBehaviour
     // hides the previous choices
     // hides the timer
     public void PerformChoice(int num)
-    {        
+    {
+        activeTimer = false;
+        timerText.gameObject.SetActive(activeTimer);
         gameController.PlayScene(main.labels[num].nextScene);
         animator.SetTrigger("Hide");
         timer = 0.0f;
-        activeTimer = false;
     }
 }
