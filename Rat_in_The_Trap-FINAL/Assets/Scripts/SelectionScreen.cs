@@ -65,7 +65,7 @@ public class SelectionScreen : MonoBehaviour
     // starts the timer
     public void SetupChoose(ChooseScene scene)
     {   
-        animator.SetTrigger("Show");
+        //animator.SetTrigger("Show");
         main = scene;
         buttonChoice1.text = scene.labels[0].text;
         buttonChoice2.text = scene.labels[1].text;
