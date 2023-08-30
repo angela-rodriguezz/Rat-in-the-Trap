@@ -7,6 +7,7 @@ using System.Collections.Specialized;
 using UnityEngine.SceneManagement;
 using System.Threading;
 
+
 public class Menu : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] private GameObject needles;
@@ -22,12 +23,23 @@ public class Menu : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         curr = GetComponent<RectTransform>();
         turner = GetComponent<Button>();
         turner.onClick.AddListener(menuTagger);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.M) || Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("Pressed M");
+            MenuShow();
+        }
+    }
+
+    public void MenuShow()
+    {
+        panel.SetActive(true);
+        //Time.timeScale = 0f;
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -41,10 +53,11 @@ public class Menu : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     }
 
+
     public void PlaceArrow(RectTransform t)
     {
         user = t.position;
-        user.y -= t.rect.height / 32f;
+        //user.y -= t.rect.height / 62f;
         transformer.position = user;
     }
 
