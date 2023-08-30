@@ -7,11 +7,13 @@ public class Transition : MonoBehaviour
 {
     public bool isSwitched = false;
     public bool catOut = false;
+    private bool glimmerOut = false;
     public GameObject Cat;
     public Image background1;
     public Image background2;
     public Animator animator;
     public Animator animator2;
+    [SerializeField] private Animator animator3;
     public bool nextLevel;
 
     public void NoCat()
@@ -50,6 +52,25 @@ public class Transition : MonoBehaviour
         
         
         
+    }
+
+    public void glimmerActivate()
+    {
+        if (!glimmerOut)
+        {
+            animator3.SetTrigger("Enter");
+            animator3.SetTrigger("Talk");
+        }
+        glimmerOut = true;
+    }
+
+    public void glimmerDeactivate()
+    {
+        if (glimmerOut)
+        {
+            animator3.SetTrigger("Disappear");
+        }
+        glimmerOut = false;
     }
 
     public void ReturnCat()
