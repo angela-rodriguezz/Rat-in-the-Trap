@@ -56,7 +56,7 @@ public class Transition : MonoBehaviour
 
     public void glimmerActivate()
     {
-        if (!glimmerOut)
+        if (glimmerOut == false)
         {
             animator3.SetTrigger("Enter");
             animator3.SetTrigger("Talk");
@@ -66,7 +66,7 @@ public class Transition : MonoBehaviour
 
     public void glimmerDeactivate()
     {
-        if (glimmerOut)
+        if (glimmerOut == true)
         {
             animator3.SetTrigger("Disappear");
         }

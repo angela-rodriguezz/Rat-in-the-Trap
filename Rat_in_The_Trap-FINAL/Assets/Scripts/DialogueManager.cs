@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+
 public class DialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI barText;
@@ -86,6 +87,33 @@ public class DialogueManager : MonoBehaviour
         return currentScene.sceneName == "Intro";
     }
 
+    public bool appearGlimmer()
+    {
+        if (currentScene.sceneName == "Trolley" && sentenceIndex == 1)
+        {
+            return true;
+        }
+        else
+        {
+            return currentScene.sceneName == "Lab" && sentenceIndex == 2;
+        }
+
+
+    }
+
+    public bool leaveGlimmer()
+    {
+        if (currentScene.sceneName == "PostTrolley" && sentenceIndex == 3)
+        {
+            return true;
+        }
+        else
+        {
+            return (currentScene.sceneName == "Finished" && sentenceIndex == 1);
+        }
+
+    }
+
 
     // If the player double clicks, the state is now complete, the coroutine stops, and now the text immediately shows the sentence immediately
     public void FinishSentence()
@@ -157,6 +185,17 @@ public class DialogueManager : MonoBehaviour
         if (currentScene.sceneName == "CatAgain")
         {
             catAnimator.ReturnCat();
+        }
+
+        if (appearGlimmer())
+        {
+            Debug.Log("activated");
+            catAnimator.glimmerActivate();
+        }
+
+        if (leaveGlimmer())
+        {
+            catAnimator.glimmerDeactivate();
         }
     }
 }
