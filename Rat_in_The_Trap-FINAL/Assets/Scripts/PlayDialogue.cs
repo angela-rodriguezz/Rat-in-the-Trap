@@ -11,6 +11,7 @@ public class PlayDialogue : MonoBehaviour
     public Transition backgroundController;
     public SelectionScreen chooseController;
     public static int loader = 3;
+    public static bool gameOver = false;
 
     private State state = State.IDLE; // sets the current scene to a regular dialogue scene
     
@@ -47,7 +48,7 @@ public class PlayDialogue : MonoBehaviour
         // otherwise the player is double clicking and therefore we autofill the sentence
     void Update()
     {
-        if (currentScene is not ChooseScene)
+        if (currentScene is not ChooseScene && gameOver != true)
         {
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             {

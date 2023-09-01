@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Transition : MonoBehaviour
@@ -14,7 +15,8 @@ public class Transition : MonoBehaviour
     public Animator animator;
     public Animator animator2;
     [SerializeField] private Animator animator3;
-    public bool nextLevel;
+    [SerializeField] private GameObject finalFade;
+    
 
     public void NoCat()
     {
@@ -54,6 +56,28 @@ public class Transition : MonoBehaviour
         
     }
 
+    public void Fader()
+    {
+        Debug.Log("Working");
+        finalFade.GetComponent<Animator>().SetTrigger("EndGame");
+        StartCoroutine(Die());
+        //yield return new WaitUntil(() => finalFade.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime <= 1.0f);
+        
+        
+
+    }
+
+    private IEnumerator Die()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(4f);
+            break;
+        }
+        SceneManager.LoadScene("MainMenu");
+
+    }
+
     public void glimmerActivate()
     {
         if (glimmerOut == false)
@@ -81,6 +105,24 @@ public class Transition : MonoBehaviour
             animator2.SetTrigger("Move");
         }
         catOut = true;
+    }
+
+    public void FinalReturn()
+    {
+        if (!catOut)
+        {
+            animator2.SetTrigger("LastEnter");
+            animator2.SetTrigger("Hurt");
+        }
+        catOut = true;
+    }
+
+    public void FinalExit()
+    {
+        if (catOut)
+        {
+            animator2.SetTrigger("LastExit");
+        }
     }
     // checks if the current scene's background isn't null
     public bool CheckImage(Sprite sprite)

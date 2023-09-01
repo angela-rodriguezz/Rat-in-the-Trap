@@ -8,7 +8,6 @@ public class DialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI barText;
     public TextMeshProUGUI personNameText;
-
     private int sentenceIndex = -1;
     public Scenes currentScene;
     public static bool finished;
@@ -90,6 +89,11 @@ public class DialogueManager : MonoBehaviour
     public bool appearGlimmer()
     {
         if (currentScene.sceneName == "Trolley" && sentenceIndex == 1)
+        {
+            return true;
+        }
+
+        else if (currentScene.sceneName == "GlimmerAgain")
         {
             return true;
         }
@@ -185,6 +189,26 @@ public class DialogueManager : MonoBehaviour
         if (currentScene.sceneName == "CatAgain")
         {
             catAnimator.ReturnCat();
+        }
+
+        if (currentScene.sceneName == "AfterChase")
+        {
+            catAnimator.FinalReturn();
+        }
+
+        if (currentScene.sceneName == "AfterChase" && sentenceIndex == 7)
+        {
+            catAnimator.FinalExit();
+        }
+
+        if (currentScene.sceneName == "Final" && IsLastSentence())
+        {
+            if (PlayDialogue.gameOver == false)
+            {
+                PlayDialogue.gameOver = true;
+                catAnimator.Fader();
+            }
+
         }
 
         if (appearGlimmer())
