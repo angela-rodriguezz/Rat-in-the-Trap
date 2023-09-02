@@ -59,6 +59,7 @@ public class PlayDialogue : MonoBehaviour
                 }
                 else if (bottomBar.IsCompleted() && bottomBar.IsLastSentence() && bottomBar.IsFinalScene())
                 {
+                    
                     StartCoroutine(EnterLoad());
                     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 }

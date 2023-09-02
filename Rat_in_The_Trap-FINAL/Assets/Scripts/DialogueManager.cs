@@ -16,6 +16,7 @@ public class DialogueManager : MonoBehaviour
     private Animator animator;
     public Transition catAnimator;
     private bool isHidden = false;
+    
 
     private IEnumerator lineAppear;
 
@@ -99,10 +100,14 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            return currentScene.sceneName == "Lab" && sentenceIndex == 2;
+            return playAudio();
         }
 
-
+        
+    }
+    private bool playAudio()
+    {
+        return currentScene.sceneName == "Lab" && sentenceIndex == 2;
     }
 
     public bool leaveGlimmer()
@@ -215,7 +220,9 @@ public class DialogueManager : MonoBehaviour
         {
             Debug.Log("activated");
             catAnimator.glimmerActivate();
+            
         }
+        
 
         if (leaveGlimmer())
         {
