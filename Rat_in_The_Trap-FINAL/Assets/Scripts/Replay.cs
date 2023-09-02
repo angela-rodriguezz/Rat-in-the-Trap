@@ -14,6 +14,6 @@ public class Replay : MonoBehaviour
     }
     public void startAgain()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("ChaseScene");
     }
 }

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d916694e20bc9cb4d818768a0bad1511, type: 3}
+  m_Name: MeoExplainn
+  m_EditorClassIdentifier: 
+  sceneName: 
+  sentences:
+  - text: 'Why did Meo react erratic? One minute she was fine and the next she was
+      attacking me. '
+    speaker: {fileID: 11400000, guid: 87536d2fdba79844e8a9aadeb4529a9e, type: 2}
+  - text: Each of the contestants before entering the simulation are injected with
+      a potent formula to get their minds accustomed to the new environment.
+    speaker: {fileID: 11400000, guid: a7b790a633195f44b91a664d4dbaf794, type: 2}
+  - text: We believe her reaction to the formula intensified her predatory instincts.
+      This is a rare case and we welcome it to speed the process of our experiment.
+    speaker: {fileID: 11400000, guid: a7b790a633195f44b91a664d4dbaf794, type: 2}
+  - text: While the game ended faster than we anticipated, we are glad it ended the
+      way it did.
+    speaker: {fileID: 11400000, guid: a7b790a633195f44b91a664d4dbaf794, type: 2}
+  - text: What happens if candidates with these symptoms win?
+    speaker: {fileID: 11400000, guid: 87536d2fdba79844e8a9aadeb4529a9e, type: 2}
+  - text: There would be no winner.
+    speaker: {fileID: 11400000, guid: a7b790a633195f44b91a664d4dbaf794, type: 2}
+  background: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 0e912e0341cd38e4592ea93bcb7f5cd5, type: 2}

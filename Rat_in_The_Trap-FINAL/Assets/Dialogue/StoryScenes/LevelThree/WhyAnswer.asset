@@ -21,5 +21,8 @@ MonoBehaviour:
   - text: The winners gain more control therefore of how they are placed due to their
       talented nature.
     speaker: {fileID: 11400000, guid: a7b790a633195f44b91a664d4dbaf794, type: 2}
+  - text: As a courtesy, we will offer any information about your final opponent
+      or information of how you were placed in this simulation.
+    speaker: {fileID: 11400000, guid: a7b790a633195f44b91a664d4dbaf794, type: 2}
   background: {fileID: 0}
-  nextScene: {fileID: 11400000, guid: 0e912e0341cd38e4592ea93bcb7f5cd5, type: 2}
+  nextScene: {fileID: 11400000, guid: 93aac64714bdcfb47b6080d0c7bfc22d, type: 2}
