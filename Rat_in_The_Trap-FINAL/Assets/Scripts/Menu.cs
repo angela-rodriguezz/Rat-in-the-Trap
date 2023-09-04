@@ -21,8 +21,10 @@ public class Menu : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         transformer = needles.GetComponent<RectTransform>();
         curr = GetComponent<RectTransform>();
-        turner = GetComponent<Button>();
-        turner.onClick.AddListener(menuTagger);
+        
+            turner = GetComponent<Button>();
+            turner.onClick.AddListener(menuTagger);
+        
 
     }
 

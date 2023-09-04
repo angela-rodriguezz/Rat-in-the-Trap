@@ -16,6 +16,8 @@ public class DialogueManager : MonoBehaviour
     private Animator animator;
     public Transition catAnimator;
     private bool isHidden = false;
+    [SerializeField] private AudioSource audioUse;
+    private bool audioOff = true;
     
 
     private IEnumerator lineAppear;
@@ -91,6 +93,11 @@ public class DialogueManager : MonoBehaviour
     {
         if (currentScene.sceneName == "Trolley" && sentenceIndex == 1)
         {
+            if (audioOff)
+            {
+                audioUse.Play();
+                audioOff = false;
+            }
             return true;
         }
 

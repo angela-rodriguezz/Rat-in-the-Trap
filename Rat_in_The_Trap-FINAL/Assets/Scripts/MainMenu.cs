@@ -7,6 +7,10 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
+        if (PlayDialogue.gameOver)
+        {
+            PlayDialogue.gameOver = false;
+        }
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
