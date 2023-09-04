@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d916694e20bc9cb4d818768a0bad1511, type: 3}
+  m_Name: ClaraExplain
+  m_EditorClassIdentifier: 
+  sceneName: 
+  sentences:
+  - text: How did I get here? And what happened to my family?
+    speaker: {fileID: 11400000, guid: 87536d2fdba79844e8a9aadeb4529a9e, type: 2}
+  - text: We selected you from the village of Ratton and started our experiments
+      on the rats to give them more human-like qualities. Speed, intelligence, and
+      critical-thinking were important traits we wanted within OASIS.
+    speaker: {fileID: 11400000, guid: a7b790a633195f44b91a664d4dbaf794, type: 2}
+  - text: The human population is dwindling and we need a new society to shape our
+      future. Therefore, we collect from animal villages that remain and make them
+      reach their fullest potential.
+    speaker: {fileID: 11400000, guid: a7b790a633195f44b91a664d4dbaf794, type: 2}
+  - text: So my friends... family...
+    speaker: {fileID: 11400000, guid: 87536d2fdba79844e8a9aadeb4529a9e, type: 2}
+  - text: Are in simulations. Or died from our experiments.
+    speaker: {fileID: 11400000, guid: a7b790a633195f44b91a664d4dbaf794, type: 2}
+  background: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 0e912e0341cd38e4592ea93bcb7f5cd5, type: 2}

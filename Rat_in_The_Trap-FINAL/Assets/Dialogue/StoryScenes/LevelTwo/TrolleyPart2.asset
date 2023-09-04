@@ -23,11 +23,13 @@ MonoBehaviour:
       I\u2019m done with the board. I\u2019m getting out of here whether your board
       likes it or not.  "
     speaker: {fileID: 11400000, guid: 87536d2fdba79844e8a9aadeb4529a9e, type: 2}
-  - text: 'Right. CONTINUING EXPERIMENT. We elected four other subjects for this
-      experiment. Three of them are tied to the track ahead of you. One is tied to
-      another track that diverts from the main line ahead. This individual was your
-      closest companion in the incubator phase! If you do nothing the minecart will
-      hit three persons or you can choose to divert the track and hit one person. '
+  - text: Right. CONTINUING EXPERIMENT. We elected four other subjects for this experiment.
+      Three of them are tied to the track ahead of you. One is tied to another track
+      that diverts from the main line ahead. This individual was your closest companion
+      in the incubator phase!
+    speaker: {fileID: 11400000, guid: a7b790a633195f44b91a664d4dbaf794, type: 2}
+  - text: 'If you do nothing the minecart will hit three persons or you can choose
+      to divert the track and hit one person. '
     speaker: {fileID: 11400000, guid: a7b790a633195f44b91a664d4dbaf794, type: 2}
   - text: "Wait? The incubator? What do you mean? Hey, I don\u2019t want to hurt
       anyone! "

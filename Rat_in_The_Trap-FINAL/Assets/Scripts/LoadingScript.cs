@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -35,9 +36,10 @@ public class LoadingScript : MonoBehaviour
         }
     }
     **/
-    private void Start()
+    void Start()
     {
-        Loading(SceneManager.GetActiveScene().buildIndex + 1);
+        Debug.Log(PlayDialogue.loader);
+        Loading(PlayDialogue.loader);
     }
 
     public void Loading(int LVL)
@@ -52,6 +54,11 @@ public class LoadingScript : MonoBehaviour
             yield return new WaitForSeconds(4f);
             break;
         }
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        
+        SceneManager.LoadScene(lvl);
+        
+            
+        
+
     }
 }

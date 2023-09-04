@@ -22,7 +22,7 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: a7b790a633195f44b91a664d4dbaf794, type: 2}
   - text: Huh, what is this?
     speaker: {fileID: 11400000, guid: 87536d2fdba79844e8a9aadeb4529a9e, type: 2}
-  - text: Why this is your one and only virtual computer software Glimmer! The tram
+  - text: Why this is your one and only virtual computer software Glimmer! The team
       and I are just gonna ask a couple of questions and you're on your way, so answer
       as best as you can!
     speaker: {fileID: 11400000, guid: a7b790a633195f44b91a664d4dbaf794, type: 2}

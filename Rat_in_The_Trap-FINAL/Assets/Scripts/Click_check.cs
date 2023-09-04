@@ -62,7 +62,8 @@ public class Click_check : MonoBehaviour
             if (total >= 30)
             {
                 Debug.Log("Win");
-                SceneManager.LoadScene(6);
+                Health.health = 1;
+                SceneManager.LoadScene(7);
             }
             else
             {

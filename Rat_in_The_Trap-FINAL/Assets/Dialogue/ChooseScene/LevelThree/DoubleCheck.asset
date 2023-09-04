@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e494f8f2932b5b48b81e5238f3ae269, type: 3}
+  m_Name: DoubleCheck
+  m_EditorClassIdentifier: 
+  labels:
+  - text: I'm sure
+    nextScene: {fileID: 11400000, guid: b1ed3086d924cc94e9b942e8381badb0, type: 2}
+  - text: No
+    nextScene: {fileID: 11400000, guid: 0e912e0341cd38e4592ea93bcb7f5cd5, type: 2}
+  - text: IDK...
+    nextScene: {fileID: 11400000, guid: 0e912e0341cd38e4592ea93bcb7f5cd5, type: 2}

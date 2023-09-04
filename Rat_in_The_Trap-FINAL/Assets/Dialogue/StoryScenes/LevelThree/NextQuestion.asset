@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d916694e20bc9cb4d818768a0bad1511, type: 3}
+  m_Name: NextQuestion
+  m_EditorClassIdentifier: 
+  sceneName: 
+  sentences:
+  - text: OASIS understands this experience is not for the faint of heart and allows
+      a brief moment of silence. START MOMENT OF SILENCE.
+    speaker: {fileID: 11400000, guid: a7b790a633195f44b91a664d4dbaf794, type: 2}
+  - text: ...
+    speaker: {fileID: 11400000, guid: a7b790a633195f44b91a664d4dbaf794, type: 2}
+  - text: ...
+    speaker: {fileID: 11400000, guid: a7b790a633195f44b91a664d4dbaf794, type: 2}
+  - text: MOMENT OF SILENCE OVER. Each winner is allowed two options. You can join
+      OASIS and enter within our new society. This is no small feat as only a select
+      few can enter.
+    speaker: {fileID: 11400000, guid: a7b790a633195f44b91a664d4dbaf794, type: 2}
+  - text: Or you can join within the minds of Glimmer. Immerse yourself into the
+      Glimmer program and run the simulations that bring success within our world.
+    speaker: {fileID: 11400000, guid: a7b790a633195f44b91a664d4dbaf794, type: 2}
+  - text: STARTING TIMER. The team needs your answer immediately and it is no small
+      decision. Choose wisely.
+    speaker: {fileID: 11400000, guid: a7b790a633195f44b91a664d4dbaf794, type: 2}
+  background: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: a7eb6c095313312418f86337aa3c43a3, type: 2}

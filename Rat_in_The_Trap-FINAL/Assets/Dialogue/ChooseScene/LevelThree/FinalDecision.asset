@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e494f8f2932b5b48b81e5238f3ae269, type: 3}
+  m_Name: FinalDecision
+  m_EditorClassIdentifier: 
+  labels:
+  - text: Glimmer
+    nextScene: {fileID: 11400000, guid: 3497a73f023c7d743845a9f7d3f14325, type: 2}
+  - text: OASIS
+    nextScene: {fileID: 11400000, guid: 50663a5d122904b47a976728a3201a53, type: 2}
+  - text: None
+    nextScene: {fileID: 11400000, guid: 18caa4a022d103c46bb25085ba7d1bc1, type: 2}
