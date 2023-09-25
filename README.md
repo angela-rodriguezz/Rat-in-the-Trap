@@ -13,6 +13,8 @@ Play as Ciara and meet interesting characters like Miao and Glimmer! Try to esca
 
 [![Trailer](https://media.discordapp.net/attachments/1081055450860093451/1101755847228534784/7AdSyR.png?width=867&height=485)](https://www.youtube.com/watch?v=hVgRdOQv_ZY)
 
+# Gameplay Mechanics
+
 # Credits:
 
 - Programming: Angela Rodriguez, Andrew Deakin, Jun Hyung Lee, Sameem Saleem
