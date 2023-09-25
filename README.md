@@ -15,6 +15,8 @@ Play as Ciara and meet interesting characters like Miao and Glimmer! Try to esca
 
 # Gameplay Mechanics
 
+I was the lead programmer the team and was heavily involved in the making of the game's core mechanics. 
+
 # Credits:
 
 - Programming: Angela Rodriguez, Andrew Deakin, Jun Hyung Lee, Sameem Saleem
