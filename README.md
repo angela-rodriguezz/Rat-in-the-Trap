@@ -15,7 +15,11 @@ Play as Ciara and meet interesting characters like Miao and Glimmer! Try to esca
 
 # Gameplay Mechanics
 
-I was the lead programmer the team and was heavily involved in the making of the game's core mechanics. 
+In the creation of the game, I was the lead programmer and lead designer of the team and was heavily involved in the making of the game's core mechanics. I served as the go-to person to discuss the progress of the game's programming and answered any narrative and design questions.
+
+Additionally, I managed a majority of the game's core systems, including but not limited to, the dialogue, health, and animation systems that would be implemented within the Unity Engine. Therefore, I handled many technical design tasks, including building the Unity prototype that would be presented within our team's Milestone 1 presentation and wrote the C# skeleton scripts for choice-based decisions and the menu system before fully integrating within the game.
+
+Also served as the presenter for the final milestone presentation in which my team and I presented the progress of our game within a one-month period.
 
 # Credits:
 
