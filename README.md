@@ -6,7 +6,7 @@ Rat in the Trap is a story-based visual novel game, with interesting locations, 
 
 Play as Ciara and meet interesting characters like Miao and Glimmer! Try to escape this strange location you've deliberately been placed in. Go through caves, hallways, elevators, and more! Make choices that impact the dialogue!
 
-[Visit the game here!](https://somememe.itch.io/rat-in-the-trap)
+[Visit the game here!](angelarodriguezz.itch.io/rat-in-the-trap)
 
 # Game Trailer: 
 [[GDD Spring 23] Rat in the Trap Trailer](https://www.youtube.com/watch?v=hVgRdOQv_ZY)
